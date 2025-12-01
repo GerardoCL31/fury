@@ -79,6 +79,8 @@ export async function restoreWinner(winnerName) {
             ingameScreen.style.display = 'none';
             creditScreen.style.display = 'flex';
             soundManager.stop('ingame');
+            soundManager.stop('game-end');
+            soundManager.play('forest');
             persistence.save();
         }
     }
@@ -222,6 +224,13 @@ export function initIngameScreen() {
                     persistence.setWinnerName(winnerName);
                     persistence.save();
                     typewriter.stop();
+
+                    soundManager.fadeOut('ingame', 1000, () => {
+                        soundManager.stop('ingame');
+                        setTimeout(() => {
+                            soundManager.play('game-end');
+                        }, 300);
+                    });
 
                     setTimeout(() => {
                         selectWinner(winnerName);
