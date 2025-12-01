@@ -174,9 +174,11 @@ export function initIngameScreen() {
 
         selectRandomViking();
 
-        if (thorCharacter) {
-            thorCharacter.classList.add('thor-character-mad');
-        }
+        setTimeout(() => {
+            if (thorCharacter) {
+                thorCharacter.classList.add('thor-character-mad');
+            }
+        }, 500);
 
         setTimeout(() => {
             soundManager.play('lightning-effect');
