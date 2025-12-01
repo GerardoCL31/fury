@@ -75,7 +75,7 @@ class SoundManager {
     const audio = this.sounds[name];
     const startVolume = audio.volume;
     const startTime = Date.now();
-    const fadeInterval = 25; 
+    const fadeInterval = 25;
 
     const fade = () => {
       const elapsed = Date.now() - startTime;
@@ -88,7 +88,7 @@ class SoundManager {
         setTimeout(fade, fadeInterval);
       } else {
         audio.pause();
-        audio.volume = startVolume; 
+        audio.volume = startVolume;
         if (onComplete) onComplete();
       }
     };

@@ -649,6 +649,26 @@ button:hover,
     opacity: 1;
 }
 
+.thor-rage-text {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'BoldPixels', sans-serif;
+    font-size: 100px;
+    color: #c5a746;
+    line-height: 1.3;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, 2px 2px 0 #000, 2px 2px 0 #000;
+    z-index: 30;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+
+.thor-rage-text:not(.hidden) {
+    opacity: 1;
+}
+
 .bubble {
     position: relative;
     display: flex;
@@ -1330,6 +1350,12 @@ button:hover,
         width: 260px;
         height: 260px;
         transform: translate(-50%, -50%);
+    }
+
+    .thor-rage-text {
+        top: 20%;
+        left: 18.25%;
+        font-size: 60px;
     }
 
     .rune-item {
