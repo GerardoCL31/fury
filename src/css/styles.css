@@ -1175,7 +1175,7 @@ button:hover,
     .info-button {
         width: 50px;
         height: 50px;
-        margin-top: 87vh;
+        margin-top: 80vh;
     }
 
     .mute-button {
@@ -1188,6 +1188,7 @@ button:hover,
 
     .info-content {
         width: 95vw;
+        
     }
 
     .info-content h2 {
@@ -1216,10 +1217,12 @@ button:hover,
         height: 45px;
         font-size: 20px;
         padding: 0 15px;
+        
     }
 
     .alert-popup.winner-alert .alert-message {
         font-size: 24px;
+        
     }
 
     .alert-popup.winner-alert .alert-btn {
@@ -1231,6 +1234,7 @@ button:hover,
 
     .alert-buttons {
         gap: 15px;
+        
     }
 
     #player-selection-screen {
@@ -1293,10 +1297,12 @@ button:hover,
 
     #player-selection-screen .back-button {
         left: 50vw;
+        margin-top: -8vh;
     }
 
     #player-selection-screen .game-start-button {
         left: 28vw;
+        margin-top: -8vh;
     }
 
     #player-selection-screen .vikings-list {
@@ -1437,7 +1443,7 @@ button:hover,
         width: 50px;
         height: 50px;
         margin-top: 87vh;
-        left: 42%;
+        left: 40%;
     }
 
     .credit-content {
