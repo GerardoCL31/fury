@@ -1345,6 +1345,8 @@ button:hover,
         height: 100%;
         transform: scale(1.2);
         transform-origin: bottom center;
+        margin-top: 3vh;
+        margin-left: 3vh;
     }
 
     #ingame-screen .thor-character.thor-character-mad {
@@ -1444,6 +1446,7 @@ button:hover,
         height: 50px;
         margin-top: 87vh;
         left: 40%;
+        margin-top: 84vh;
     }
 
     .credit-content {
